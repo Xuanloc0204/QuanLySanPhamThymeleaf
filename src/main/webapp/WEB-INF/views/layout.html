@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:fragment="head">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Spring Customer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        h3 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #customers {
+            font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        #customers tr:hover {
+            background-color: #e0e0e0;
+        }
+
+        #customers th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .form-container h4 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        input[type=text], input[type=email] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .notify {
+            font-size: 1.1em;
+            margin-top: 20px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+<footer th:fragment="footer">
+    &copy; 2024 Spring Customer Application | All Rights Reserved
+</footer>
+
+</body>
+</html>
